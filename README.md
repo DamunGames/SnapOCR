@@ -16,11 +16,11 @@
 
 ## 実行ファイル
 
-[win-x64.zip](attach:win-x64.zip)
+[win-x64.zip](https://github.com/DamunGames/SnapOCR/raw/master/win-x64.zip)
 
-[win-x86.zip](attach:win-x86.zip)
+[win-x86.zip](https://github.com/DamunGames/SnapOCR/raw/master/win-x86.zip)
 
-[win-arm64.zip](attach:win-arm64.zip)
+[win-arm64.zip](https://github.com/DamunGames/SnapOCR/raw/master/win-arm64.zip)
 
 ## その他
 
