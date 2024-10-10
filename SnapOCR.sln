@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnapOCR", "SnapOCR\SnapOCR.csproj", "{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Debug|ARM64.Build.0 = Debug|ARM64
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Debug|x64.ActiveCfg = Debug|x64
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Debug|x64.Build.0 = Debug|x64
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Debug|x86.ActiveCfg = Debug|x86
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Debug|x86.Build.0 = Debug|x86
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Release|ARM64.ActiveCfg = Release|ARM64
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Release|ARM64.Build.0 = Release|ARM64
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Release|x64.ActiveCfg = Release|x64
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Release|x64.Build.0 = Release|x64
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Release|x86.ActiveCfg = Release|x86
+		{AE7DCF7F-4255-4EC9-B17D-5B8E79DC5BCB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAB24752-3A24-42A9-AFC2-E1C4063632AD}
+	EndGlobalSection
+EndGlobal
