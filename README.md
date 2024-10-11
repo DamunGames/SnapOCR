@@ -14,13 +14,9 @@
 
 - ショーカットキーによる操作は<span style="color: cyan;">ウィンドウが非アクティブでも使用可能</span>です
 
-## 実行ファイル
+## インストーラー
 
-[win-x64.zip](https://github.com/DamunGames/SnapOCR/raw/master/win-x64.zip)
-
-[win-x86.zip](https://github.com/DamunGames/SnapOCR/raw/master/win-x86.zip)
-
-[win-arm64.zip](https://github.com/DamunGames/SnapOCR/raw/master/win-arm64.zip)
+[最新のReleases](https://github.com/DamunGames/SnapOCR/releases/tag/Version1.0.0)からダウンロードできます
 
 ## OCRについて
 
