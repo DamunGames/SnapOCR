@@ -22,6 +22,15 @@
 
 [win-arm64.zip](https://github.com/DamunGames/SnapOCR/raw/master/win-arm64.zip)
 
-## その他
+## OCRについて
 
 OCRはWindows SDKに含まれるWindows.Media.Ocrのものを使用しています
+
+## 使用リソース
+本プロジェクトは、以下のリソースを使用しています
+
+- アイコン
+  - アイコン名: Document Scanner
+  - 出典: [Material Icons](https://fonts.google.com/icons)
+  - 著作権者: Google
+  - ライセンス: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
