@@ -16,7 +16,7 @@
 
 ## インストーラー
 
-[最新のReleases](https://github.com/DamunGames/SnapOCR/releases/tag/Version1.0.0)からダウンロードできます
+[最新のReleases](https://github.com/DamunGames/SnapOCR/releases)からダウンロードできます
 
 ## OCRについて
 
