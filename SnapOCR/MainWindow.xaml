@@ -37,6 +37,7 @@
 		<StackPanel Grid.Row="2">
 			<StackPanel Orientation="Horizontal">
 				<Button x:Name="RegisterButton" Content="登録(Ctrl+\)" Click="RegisterButton_Click"/>
+				<CheckBox x:Name="RemoveNewlinesCheckBox" Content="改行を削除(登録時)" VerticalAlignment="Center"/>
 				<Button x:Name="RemoveRowButton" Content="一つ削除(Ctrl+Del)" Click="RemoveRowButton_Click"/>
 				<Button x:Name="SaveButton" Content="ファイルに保存" Click="SaveButton_Click"/>
 			</StackPanel>

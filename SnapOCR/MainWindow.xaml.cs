@@ -6,7 +6,6 @@ using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -45,7 +44,7 @@ namespace SnapOCR
 
 		public class TextData
 		{
-			public string Text { get; set; }
+			public string Text { get; set; } = "";
 		}
 		public ObservableCollection<TextData> RegisterdTexts { get; set; } = new ObservableCollection<TextData>();
 
@@ -94,15 +93,31 @@ namespace SnapOCR
 		// ==========================
 		// TextData
 		// ==========================
+		private void RegisterText(string text)
+		{
+			if (RemoveNewlinesCheckBox?.IsChecked ?? false) {
+				RegisterTextDataWithoutNewlines(text);
+			}
+			else {
+				RegisterTextData(text);
+			}
+		}
+
 		private void RegisterTextData(string text)
 		{
-			string[] splited = Regex.Replace(text, "\r\n", "\n").Split(new char[] { '\n', '\r' });
-			for (int i = 0; i < splited.Length; i++) {
-				RegisterdTexts.Add(new TextData()
-				{
-					Text = splited[i],
-				});
+			string[] splitedTexts = text.Replace("\r\n", "\n").Split(['\n', '\r']);
+			for (int i = 0; i < splitedTexts.Length; i++) {
+				RegisterdTexts.Add(new TextData() { Text = splitedTexts[i] });
 			}
+		}
+
+		private void RegisterTextDataWithoutNewlines(string text)
+		{
+			char[] unwantedChars = { '\r', '\n' };
+			foreach (char c in unwantedChars) {
+				text = text.Replace(c.ToString(), "");
+			}
+			RegisterdTexts.Add(new TextData() { Text = text });
 		}
 
 		private void RemoveTextData()
@@ -248,12 +263,12 @@ namespace SnapOCR
 				var stringBuilder = new StringBuilder();
 				List<string> results = new List<string>();
 
-				string text = Regex.Replace(ocrResult.Lines[0].Text, " ", "");
+				string text = ocrResult.Lines[0].Text.Replace(" ", "");
 				stringBuilder.Append(text);
 				results.Add(text);
 				Console.WriteLine(text);
 				for (int i = 1; i < ocrResult.Lines.Count; i++) {
-					text = Regex.Replace(ocrResult.Lines[i].Text, " ", "");
+					text = ocrResult.Lines[i].Text.Replace(" ", "");
 					stringBuilder.AppendLine();
 					stringBuilder.Append(text);
 					results.Add(text);
@@ -297,7 +312,7 @@ namespace SnapOCR
 				int keyId = wParam.ToInt32();
 				if (keyId == HOTKEY_ID_REGISTER) {
 					// Ctrl + \が押された時の処理
-					RegisterTextData(OCRResultTextBlock.Text);
+					RegisterText(OCRResultTextBlock.Text);
 
 					handled = true;
 				}
@@ -333,11 +348,11 @@ namespace SnapOCR
 		}
 
 		// ==========================
-		// ボタンイベント
+		// Controlイベント
 		// ==========================
 		private void RegisterButton_Click(object sender, RoutedEventArgs e)
 		{
-			RegisterTextData(OCRResultTextBlock.Text);
+			RegisterText(OCRResultTextBlock.Text);
 		}
 
 		private void RemoveRowButton_Click(object sender, RoutedEventArgs e)
